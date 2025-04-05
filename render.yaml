@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: cubejs-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: CUBEJS_DB_TYPE
+        value: postgres
+      - key: CUBEJS_DB_HOST
+        value: dpg-cvolb11r0fns739pqvog-a
+      - key: CUBEJS_DB_NAME
+        value: postgresql_4124
+      - key: CUBEJS_DB_USER
+        value: postgresql_4124_user
+      - key: CUBEJS_DB_PASS
+        value: 6qSShAwxKCWlKIwpNhxEoulttGRFVtNf
+      - key: CUBEJS_API_SECRET
+        value: database_secret
+      - key: CUBEJS_DEV_MODE
+        value: true
