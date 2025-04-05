@@ -2,9 +2,10 @@
   "name": "cubejs-analytics",
   "version": "0.0.1",
   "private": true,
-  "scripts": {
-    "dev": "cubejs-server"
-  },
+ "scripts": {
+  "dev": "cubejs-server",
+  "start": "cubejs-server"
+},
   "template": "docker",
   "templateVersion": "1.2.30",
   "devDependencies": {
