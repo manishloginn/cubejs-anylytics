@@ -3,24 +3,29 @@ cube('Metrics', {
 
   measures: {
     totalValue: {
-      sql: `value`,
-      type: `sum`,
+      sql: 'value',
+      type: 'sum'
     },
+    count: {
+      type: 'count'
+    }
   },
 
   dimensions: {
     id: {
-      sql: `id`,
-      type: `number`,
-      primaryKey: true,
+      sql: 'id',
+      type: 'number',
+      primaryKey: true
     },
+
     name: {
-      sql: `name`,
-      type: `string`,
+      sql: 'name',
+      type: 'string'
     },
+
     timestamp: {
-      sql: `timestamp`,
-      type: `time`,
-    },
-  },
+      sql: 'timestamp', 
+      type: 'time'
+    }
+  }
 });
